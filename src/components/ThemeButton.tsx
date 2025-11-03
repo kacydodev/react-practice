@@ -6,7 +6,7 @@ export default function ThemeButton() {
 	return (
 		<form action={toggleTheme}>
 			<p>Current theme is: {theme}</p>
-			<button className='bg-slate-300 dark:bg-slate-800 p-3'>
+			<button className='bg-slate-300 dark:bg-slate-700 p-3'>
 				Toggle Theme
 			</button>
 		</form>

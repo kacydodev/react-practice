@@ -7,10 +7,10 @@
 
 @layer base {
 	html {
-		@apply h-full;
+		@apply h-full dark:bg-slate-900;
 	}
 
 	body {
-		@apply font-mono;
+		@apply font-mono dark:text-white;
 	}
 }

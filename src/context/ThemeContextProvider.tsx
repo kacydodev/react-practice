@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import ThemeContext from './ThemeContext';
 
 export default function ThemeProvider({
@@ -8,9 +8,11 @@ export default function ThemeProvider({
 }) {
 	const [theme, setTheme] = useState('light');
 
-	const toggleTheme = () => {
+	const toggle = () => {
 		setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
 	};
+
+	const toggleTheme = useMemo(() => toggle, []);
 
 	return (
 		<ThemeContext.Provider value={{ theme, toggleTheme }}>

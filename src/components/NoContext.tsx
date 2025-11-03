@@ -13,10 +13,10 @@ export default function NoContextComponent() {
 	}, []);
 
 	return (
-		<div className='p-3 bg-amber-200'>
+		<div className='p-3 bg-blue-500'>
 			<h3>Child component</h3>
 			<small
-				className={`${message ? 'block' : 'hidden'} italic text-slate-500`}
+				className={`${message ? 'block' : 'hidden'} italic text-slate-300`}
 			>
 				{message}
 			</small>
