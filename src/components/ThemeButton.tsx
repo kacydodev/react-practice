@@ -2,7 +2,6 @@ import useTheme from '../hooks/useTheme';
 
 export default function ThemeButton() {
 	const { theme, toggleTheme } = useTheme();
-	// console.log('context:', context);
 
 	return (
 		<form action={() => toggleTheme()}>

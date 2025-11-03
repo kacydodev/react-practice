@@ -1,10 +1,14 @@
+import NoContextComponent from './components/NoContext';
 import ThemeButton from './components/ThemeButton';
 import ThemeProvider from './context/ThemeContextProvider';
 
 export default function App() {
 	return (
-		<ThemeProvider>
-			<ThemeButton />
-		</ThemeProvider>
+		<main className='space-y-12'>
+			<ThemeProvider>
+				<ThemeButton />
+				<NoContextComponent />
+			</ThemeProvider>
+		</main>
 	);
 }
