@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'MonaspaceArgon-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: url(/fonts/MonaspaceArgon-Regular.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'MonaspaceArgon-Italic';
+	font-style: italic;
+	font-weight: 400;
+	src: url(/fonts/MonaspaceArgon-Italic.woff2) format('woff2');
+}

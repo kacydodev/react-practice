@@ -1,0 +1,16 @@
+@import url(/src/font.css);
+@import 'tailwindcss';
+
+@theme {
+	--font-mono: 'MonaspaceArgon-Regular', monospace;
+}
+
+@layer base {
+	html {
+		@apply h-full;
+	}
+
+	body {
+		@apply font-mono;
+	}
+}
